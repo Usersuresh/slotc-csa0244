@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+	int first,second,*p,*q,sum;
+	printf("\nenter two integers to add :");
+	scanf("%d%d",&first,&second);
+	if(first&second>0){
+		p=&first;
+	    q=&second;
+	    sum=*p+*q;
+    	printf("\nsum of the numbers =%d\n",sum);
+	}
+	else if(first&second<0){
+		printf("invalid");
+	}
+	else 
+	printf("completed");
+	return 0;
+}
