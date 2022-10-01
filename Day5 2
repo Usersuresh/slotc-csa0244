@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()  {
+    FILE *fp;
+    char text[10];
+    printf("enter file name to display:");
+    scanf("%s",text);
+    fp = fopen("text", "r");
+    fscanf(fp, "%s", &text);
+    printf("File Content: %s", text);
+}
