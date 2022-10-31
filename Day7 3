@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+	int n,m,num;
+	printf("enter lower number");
+	scanf("%d",&n);
+	printf("enter upper number");
+	scanf("%d",&m);
+	printf("the even numbers are");
+	if(n>0&&m>0)
+	{
+			for(num=n;num<=m;num++)
+	     {
+	       if(num%2==0)	
+	      {
+	    	printf("%d ",num);
+	      }
+	     }
+	 printf("the odd numbers are:");
+	 for(num=n;num<=m;num++)
+	 {
+		if(num%2!=0)
+		{
+			printf("%d ",num);
+		}
+   	 }
+   }
+   	else
+   	printf("invalid input");
+		
+
+	return 0;
+}
